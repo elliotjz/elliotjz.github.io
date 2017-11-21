@@ -1,0 +1,61 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	padding: 0 0 150px 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+h3 {
+	color: #194d70;
+	margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #194d70;
+  margin: 0;
+  padding: 0;
+}
+
+.email {
+	text-align: center;
+	font-style: italic;
+}
+
+.container {
+	max-width: 600px;
+	margin: auto;
+}
+
+.section {
+	margin: 50px 0;
+}
+
+.float-right {
+	float: right;
+	font-style: italic;
+}
+
+.item-title {
+	font-weight: 900;
+	margin-bottom: 6px;
+}
+
+.item-details {
+	color: #444;
+	margin-top: 0;
+}
+
+.row {
+	margin-top: 10px;
+}
+
+.col {
+  float: left;
+  width: 50%;
+}

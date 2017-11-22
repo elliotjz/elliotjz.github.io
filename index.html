@@ -1,23 +1,30 @@
 <html>
 	<head>
 		<title>Elliot Zoerner Resume</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
 	</head>
 	<link rel="stylesheet" href="styles/style.css">
 	<body>
 		<div class="container">
 
-			<h1>Elliot Zoerner</h1>
-			<p class="email">elliot.zoerner@gmail.com</p>
+			<div id="header">
+				<h1>Elliot Zoerner</h1>
+				<p class="email">elliot.zoerner@gmail.com</p>
+				<p class="download-link"><a href="null" target="_blank">Downloadable Resume</a></p>
+				<div class="icon-container">
+					<a href="https://github.com/elliotjz" target="_blank"><img class="icon" src="images/github.svg" alt="github"></a>
+					<a href="https://www.linkedin.com/in/elliot-zoerner/" target="_blank"><img class="icon" src="images/linkedin.svg" alt="linkedin"></a>
+				</div>
+			</div> <!-- End Head Block -->
 
-			<div class="section">
+			<div id="section1" class="section">
 				<h3>Education</h3>
 				<hr>
 				<div class="section-details">
 					<div class="item">
 						<p class="item-title">
 							Bachelor of Computer Science - University of New England
-							<span class="float-right">2017 - 2019</span>
+							<span class="dates">2017 - 2019</span>
 						</p>
 						<ul class="item-details">
 							<li>Completed 54 of 144 credit points.</li>
@@ -27,7 +34,7 @@
 					<div class="item">
 						<p class="item-title">
 							Free Code Camp Certificates
-							<span class="float-right">Jan 2017 - Sept 2017</span>
+							<span class="dates">Jan 2017 - Sept 2017</span>
 						</p>
 						<ul class="item-details">
 							<li>Front End Development Program</li>
@@ -39,7 +46,7 @@
 					<div class="item">
 						<p class="item-title">
 							Bachelor of Mechanical Engineering - University of Adelaide
-							<span class="float-right">2011 - 2013</span>
+							<span class="dates">2011 - 2013</span>
 						</p>
 						<ul class="item-details">
 							<li>Competed 60 of 96 credit points</li>
@@ -49,44 +56,47 @@
 				</div>
 			</div> <!-- End Education -->
 
-			<div class="section">
+
+			<div id="section2" class="section">
 				<h3>Work Experience</h3>
 				<hr>
 				<div class="section-details">
 					<div class="item">
 						<p class="item-title">
-							Open Source Contrinutor for freeCodeCamp
-							<span class="float-right">October 2017 - Present</span>
-						</p>
-						<ul class="item-details">
-							<li>Converting algorithm challenges from Project Euler to freeCodeCamp in-house challenges</li>
-						</ul>
-					</div>
-					<div class="item">
-						<p class="item-title">
 							Musician at Gravity & Other Myths
-							<span class="float-right">2014 - Present</span>
+							<span class="dates">2014 - Present</span>
 						</p>
 						<ul class="item-details">
 							<li>Touring with the company’s circus shows</li>
 							<li>Playing drums in the live show</li>
 							<li>Composing and producing music for the shows</li>
+							<li>Maintaining the company's Wordpress website</li>
+						</ul>
+					</div>
+					<div class="item">
+						<p class="item-title">
+							Open Source Contributor for freeCodeCamp
+							<span class="dates">October 2017 - Present</span>
+						</p>
+						<ul class="item-details">
+							<li>Adding algorithm challenges to freeCodeCamp. This involves finding an efficient solution to the challenge and formatting the question description.</li>
 						</ul>
 					</div>
 					<div class="item">
 						<p class="item-title">
 							Drum Teacher at OLSH College
-							<span class="float-right">2010 - 2013</span>
+							<span class="dates">2010 - 2013</span>
 						</p>
 						<ul class="item-details">
-							<li>Teaching students to play drums and percussion</li>
-							<li>Running and managing a percussion ensemble</li>
+							<li>Teaching students in one on one lessons</li>
+							<li>Running and managing a small percussion ensemble</li>
 						</ul>
 					</div>
 				</div>
 			</div> <!-- End Work Experience -->
 
-			<div class="section">
+
+			<div id="section3" class="section">
 				<h3>Selected Projects</h3>
 				<hr>
 				<div class="section-details">
@@ -95,9 +105,11 @@
 							Book Trading App
 						</p>
 						<ul class="item-details">
-							<li>An app that allows users to keep a database of their books, and allows users to search through other people's books and request trades.</li>
-							<li><a href="https://github.com/elliotjz/book-trading-club" target="_blank">Source Code</a></li>
-							<li><a href="https://elliotjz-book-trading.herokuapp.com/" target="_blank">Demo Deployment</a></li>
+							<li>An app where users to keep a database of their books, search through other people's books and request trades.</li>
+							<li>This project involved database management, user authentication, fetching data from an API, and building a React front end.</li>
+							<li>
+								{ <a href="https://github.com/elliotjz/book-trading-club" target="_blank">Source Code</a> }   <img class="rocket" src="images/rocket.svg"> <a href="https://elliotjz-book-trading.herokuapp.com/" target="_blank">Demo Deployment</a>
+							</li>
 						</ul>
 					</div>
 					<div class="item">
@@ -105,16 +117,20 @@
 							Pintrest Clone
 						</p>
 						<ul class="item-details">
-							<li>An app that has similar functionality to Pintrest. Users can post links to pictures (pins). These pictures will appear on their user page. Users can like other user's pins.</li>
-							<li><a href="https://github.com/elliotjz/pintrest-clone" target="_blank">Source Code</a></li>
-							<li><a href="https://elliotjz-pintrest-clone.herokuapp.com/" target="_blank">Demo Deployment</a></li>
+							<li>An app that has similar functionality to Pintrest.</li>
+							<li>Users can login with Twitter or Google</li>
+							<li>Users can post links to pictures (pins), browse all pins that have been posted to the site, and like pins.</li>
+							<li>This project involved database management, user authentication, and building a React front end.</li>
+							<li>
+								{ <a href="https://github.com/elliotjz/pintrest-clone" target="_blank">Source Code</a> }   <img class="rocket" src="images/rocket.svg"> <a href="https://elliotjz-pintrest-clone.herokuapp.com/" target="_blank">Demo Deployment</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div> <!-- End Secected Projects -->
 
 
-			<div class="section">
+			<div id="section4" class="section">
 				<h3>Skills</h3>
 				<hr>
 				<div class="section-details">
@@ -140,7 +156,8 @@
 					</div>
 				</div>
 			</div> <!-- End Skills -->
-		
+
 		</div>
+
 	</body>
 </html>

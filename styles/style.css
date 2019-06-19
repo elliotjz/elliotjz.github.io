@@ -1,3 +1,7 @@
+:root {
+  --feature: #194d70;
+  --feature-light: #3f92cc;
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -10,15 +14,20 @@ h1 {
 }
 
 h3 {
-	color: #194d70;
+	color: var(--feature);
 	margin: 0;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #194d70;
+  border-top: 1px solid var(--feature);
   margin: 0 0 10px 0;
   padding: 0;
+}
+
+a {
+  color: var(--feature-light);
+  text-decoration: none;
 }
 
 .container {
@@ -126,9 +135,16 @@ hr {
 	margin-top: 0;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .col {
-  float: left;
-  width: 50%;
+  margin: 0 auto;
+  flex: 1;
 }
 
 .rocket {
